@@ -1,0 +1,151 @@
+
+/*FLIP CARD========================*/
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+body{font-family: 'Lato', sans-serif;}
+.container1{
+width:60px;height:50px;
+position: relative;
+perspective: 0px;
+margin:0 auto;
+}
+.card{
+position: absolute;
+width: 100%;
+height: 100%;
+}
+.card:hover .front {
+transform: rotateY(-180deg);
+}
+.card:hover .back {
+transform: rotateY(0deg);
+}
+.face {
+position: absolute;
+width: 100%;
+height: 100%;
+transform-style: preserve-3d; backface-visibility: hidden; transition: 0.5s;
+}
+.face.front{
+transform: rotateY(0deg);
+}
+.face.back {
+display: block;
+transform: rotateY(180deg);
+box-sizing: border-box;
+padding: 0px;
+color: white;
+}
+.card a.btn.btn-block{display:block;}
+.card a.btn.btn-outline{background:transparent;border:1px solid #fff;border-radius:3px;padding:10px;color:#fff;text-align:center;text-decoration:none;}
+.card a.btn.btn-outline:hover{background:#222;border:1px solid transparent;}
+
+/*flip car end================================================================*/
+body{
+  background-image: url(../img/X-wing_schematics.jpg);
+  background-size: cover;
+}
+#logo{
+  display:block;
+  /*margin-left: 38.5em;*/
+}
+.navbar{
+  background-color: rgba(34,34,34,0.9)
+}
+.place{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.myBody{
+  background-image: url(../img/fondDark.png);
+  border-radius: 4px;
+  color:white;
+  font-size: 1.2em;
+  padding: 0em 2em;
+  margin-bottom: 3em;
+}
+.myBody li{
+  list-style-type: none;
+  margin-left: 2em;
+}
+.myBody a{
+  color:rgb(15,56,254);
+}
+.myBody a:hover{
+  color:rgb(254,104,13);
+}
+.myBody a:visited{
+  color:#337ab7;
+}
+.nav a{
+  color: black;
+}
+.myBack{
+  background-image: url(../img/fondDark.png);
+  background-size: cover;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+}
+.myBg{
+  background-image: url(../img/fond.png);
+}
+.btn{
+  color: black;
+}
+.container .myBack h1{
+  color: rgb(254,104,13);
+  text-shadow: 1px 1px 1px #FFF;
+}
+/*Retouche bootstrap changement de couleur nav-tabs==================*/
+.nav-tabs{
+  border-bottom: grey;
+}
+.nav-tabs li a{
+  color: white;
+  background-color:rgb(2, 12, 23, 0.56)
+}
+.nav-tabs li a:hover{
+  color: white;
+  border: 1px solid #6D7177CC;
+  background-color:rgb(2,12,23)
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover {
+    color: white;
+    cursor: default;
+    background-color:rgb(2,12,23);
+    border: 1px solid #6D7177CC;
+    border-bottom-color: transparent;
+}
+.nav-tabs > li > a:focus{
+  background-color:rgba(11, 21, 33, 0.86);
+}
+/*Retouche bootstrap changement de couleur pagination==================*/
+.pagination {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination > li {
+  display: inline;
+}
+.pagination > li > a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #FFF;
+  text-decoration: none;
+  background-color: rgb(2, 12, 23, 0.95);
+  border: 1px solid  #6D7177CC;
+}
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus {
+  z-index: 2;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-color:  #6D7177CC;
+}
